@@ -8,7 +8,8 @@
 
 .slimeNavbar ul {
   display: flex;
-  gap: 40px;
+  padding: 15px;
+  gap: 50px;
 }
 
 .contenedor li {
@@ -16,23 +17,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.3vw;
+  font-size: 1.5vw;
   font-weight: 900;
-  text-shadow: 0 2px 2px rgb(24, 61, 83);
-}
-
-.slimeNavbar img {
-  position: absolute;
-  width: 0;
-  transition: width 0.2s ease;
-  z-index: -1;
-}
-
-.slimeNavbar li:hover img {
-  width: calc(100% + 20px);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .contenedor a {
-  text-decoration: none; /* Quita el subrayado */
+  text-decoration: none;
   color: inherit;
+}
+
+.contenedor li:hover {
+  box-shadow: inset 0 -2px 5px #8cdcff;
+  border: 1px solid;
 }
